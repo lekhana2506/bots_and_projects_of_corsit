@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bots And Projects</title>
+<style>
+	* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(60, 64, 72);
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.logo img {
+  width: 110px;
+  top: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.4px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgb(178, 178, 178);
+  transition: color 0.3s ease-in-out;
+}
+
+.robot-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  margin: 20px;
+}
+
+.robot {
+    position: relative;
+}
+
+.robot img {
+  width: 95%;
+  height: 80%;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.robot h3 {
+  text-align: center;
+  color: rgb(178, 178, 178);
+  transition: color 0.3s ease-in-out;
+}
+
+.robot .description {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color:rgb(178, 177, 177);
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 9999; 
+  width:95%;
+  border-radius: 10px;
+}
+
+.robot:hover .description {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.robot:hover h3 {
+  color: white;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.robot:hover .description {
+    opacity: 1;
+}
+
+.heading{
+	color:rgb(0, 171, 179);
+}
+
+.fonts {
+	font-size: 15px;
+
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="header-text">
+            <h1>Bots And Projects</h1>
+        </div>
+    </header>
+    <main>
+        <div class="robot-gallery">
+            
+			<div class="robot">
+				<img src="lfr.jpeg" alt="Line Following Bot">
+				<h3> Line following Bot</h3>
+				<div class="description">
+					<p class="heading"> Line Following Bot</p><br>
+					<p class="fonts">This is a Line Following Robot that can follow a black line on a white surface. It uses infrared sensors to detect the line and a microcontroller to control the motors.</p>
+				</div>
+			</div>
+            <div class="robot">
+                <img src="Obs.jpeg" alt="Obstacle Avoiding Bot">
+				<h3> Table Top</h3>
+                <div class="description">
+					<p class="heading">Table Top Bot </p><br>
+                    <p class="fonts">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, animi expedita maiores impedit sunt quo illo ea corporis, tempore sapiente in aperiam consectetur perspiciatis aut!</p>
+                </div>
+            </div>
+            <div class="robot">
+                <img src="Obstacle Avoiding-Robot-using-Arduino-and-Ultrasonic-Sensor.jpg" alt="Obstacle Avoiding Bot">
+                <h3> Obstacle Avoiding Bot</h3>
+                <div class="description">
+					<p class="heading">Obstacle Avoiding Bot </p><br>
+                    <p class="fonts">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, animi expedita maiores impedit sunt quo illo ea corporis, tempore sapiente in aperiam consectetur perspiciatis aut!</p>
+                </div>
+            </div>
+            <div class="robot">
+                <img src="bluetooth.jpg" alt="bluetooth Bot">
+                <h3> bluetooth Controlled Bot</h3>
+                <div class="description">
+					<p class="heading">Bluetooth Controlled Bot</p><br>
+                    <p class="fonts">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, animi expedita maiores impedit sunt quo illo ea corporis, tempore sapiente in aperiam consectetur perspiciatis aut!</p>
+                </div>
+            </div>
+            <div class="robot">
+                <img src="pro5.jpeg" alt="Gesture Control Bot">
+                <h3>Gesture Controlled Bot</h3>
+                <div class="description">
+					<p class="heading">Gesture Controlled Bot </p><br>
+                    <p class="fonts">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, animi expedita maiores impedit sunt quo illo ea corporis, tempore sapiente in aperiam consectetur perspiciatis aut!</p>
+                </div>
+            </div>
+            <div class="robot">
+                <img src="pro8.jpeg" alt="Rugged Race Bot">
+                <h3>Rugged Race Bot</h3>
+                <div class="description">
+					<p class="heading">Rugged Race Bot </p><br>
+                    <p class="fonts">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, animi expedita maiores impedit sunt quo illo ea corporis, tempore sapiente in aperiam consectetur perspiciatis aut!</p>
+                </div>
+            </div>
+            <div class="robot">
+                <img src="Mq5_circuit.jpg" alt="Gas Leakage Detection">
+                <h3> Gas Leakage Detection</h3>
+                <div class="description">
+					<p class="heading">Gas Leakage Detection </p><br>
+                    <p class="fonts">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, animi expedita maiores impedit sunt quo illo ea corporis, tempore sapiente in aperiam consectetur perspiciatis aut!</p>
+                </div>
+            </div>
+            <div class="robot">
+                <img src="Telegram-Controlled-Home-Automation-using-NodeMCU-ESP8266.jpg" alt="Home Automation">
+                <h3> Home Automation</h3>
+                <div class="description">
+					<p class="heading">Home Automation </p><br>
+                    <p class="fonts">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, animi expedita maiores impedit sunt quo illo ea corporis, tempore sapiente in aperiam consectetur perspiciatis aut!</p>
+                </div>
+            </div>
+            <div class="robot">
+                <img src="pro3.jpeg" alt="Object Detector">
+                <h3> Object Detector</h3>
+                <div class="description">
+					<p class="heading">Object Detector </p><br>
+                    <p class="fonts">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, animi expedita maiores impedit sunt quo illo ea corporis, tempore sapiente in aperiam consectetur perspiciatis aut!</p>
+                </div>
+            </div>
+            <div class="robot">
+				<h3>Smart Irrigation System</h3>
+                <img src="pro4.jpeg" alt="Smart Irrigation System">
+                <h3> Smart Irrigation Sytem</h3>
+                <div class="description">
+					<p class="heading">Smart Irrigation System </p><br>
+                    <p class="fonts">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, animi expedita maiores impedit sunt quo illo ea corporis, tempore sapiente in aperiam consectetur perspiciatis aut!</p>
+                </div>
+            </div>
+            <div class="robot">
+                <img src="pro9.jpeg" alt="Wireless Surveillance Camera">
+                <h3> Wireless Surveillance Camera</h3>
+                <div class="description">
+					<p class="heading">Wireless Surveillance Camera</p><br>
+                    <p class="fonts">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, animi expedita maiores impedit sunt quo illo ea corporis, tempore sapiente in aperiam consectetur perspiciatis aut!</p>
+                </div>
+            </div>
+            <div class="robot">
+                <img src="pro7.jpeg" alt="Air Quality Tracker">
+                <h3> Air Quality Tracker</h3>
+                <div class="description">
+					<p class="heading">Air Quality Tracker</p><br>
+                    <p class="fonts">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, animi expedita maiores impedit sunt quo illo ea corporis, tempore sapiente in aperiam consectetur perspiciatis aut!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
